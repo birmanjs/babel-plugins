@@ -11,6 +11,5 @@ const tailPkgs = readdirSync(join(__dirname, 'packages')).filter(
 export default {
   target: 'node',
   cjs: { type: 'babel', lazy: true },
-  disableTypeCheck: true,
   pkgs: [...headPkgs, ...tailPkgs]
 };
