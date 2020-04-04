@@ -1,6 +1,6 @@
 {
   "name": "@birman/babel-preset-birman",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "babel-preset-birman",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
