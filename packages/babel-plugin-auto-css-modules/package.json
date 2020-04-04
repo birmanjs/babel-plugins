@@ -1,0 +1,17 @@
+{
+  "name": "@birman/babel-plugin-auto-css-modules",
+  "version": "1.1.2",
+  "description": "babel-plugin-auto-css-modules",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@birman/babel-plugin-utils": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

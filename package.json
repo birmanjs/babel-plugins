@@ -1,0 +1,33 @@
+{
+  "name": "@birman/workspace",
+  "private": true,
+  "repository": "git@github.com:birmanjs/babel-plugins.git",
+  "author": "kang <wang_xingkang@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "birman-test",
+    "build": "father-build",
+    "prettier": "walrus prettier",
+    "lint": "walrus lint",
+    "lint:commit": "walrus commitlint --env HUSKY_GIT_PARAMS",
+    "release": "walrus release"
+  },
+  "devDependencies": {
+    "@birman/test": "^1.1.2",
+    "@walrus/cli": "^1.2.0",
+    "@walrus/plugin-release": "^1.7.0",
+    "@walrus/preset-lint": "^1.1.2",
+    "father-build": "^1.17.2",
+    "husky": "3.1.0",
+    "lerna": "^3.20.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn prettier",
+      "commit-msg": "yarn lint:commit"
+    }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

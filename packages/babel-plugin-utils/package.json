@@ -1,0 +1,18 @@
+{
+  "name": "@birman/babel-plugin-utils",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@babel/parser": "^7.9.4",
+    "@babel/traverse": "^7.9.0",
+    "@babel/types": "^7.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
